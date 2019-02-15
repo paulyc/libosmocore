@@ -1239,7 +1239,6 @@ void osmo_gsm48_classmark_update(struct osmo_gsm48_classmark *dst, const struct 
 	}
 }
 
-
 /*! Determine if the given Classmark (1/2/3) value permits a given A5/n cipher.
  * \param[in] cm  Classmarks.
  * \param[in] a5  The N in A5/N for which to query whether support is indicated.
