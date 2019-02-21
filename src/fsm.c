@@ -205,9 +205,9 @@ static void fsm_tmr_cb(void *data)
 {
 	struct osmo_fsm_inst *fi = data;
 	struct osmo_fsm *fsm = fi->fsm;
-	uint32_t T = fi->T;
+	int32_t T = fi->T;
 
-	LOGPFSM(fi, "Timeout of T%u\n", fi->T);
+	LOGPFSM(fi, "Timeout of T%d\n", fi->T);
 
 	if (fsm->timer_cb) {
 		int rc = fsm->timer_cb(fi);
