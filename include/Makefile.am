@@ -53,6 +53,7 @@ nobase_include_HEADERS = \
                        osmocom/core/utils.h \
                        osmocom/core/write_queue.h \
                        osmocom/core/use_count.h \
+                       osmocom/core/ip_port.h \
                        osmocom/crypt/auth.h \
                        osmocom/crypt/gprs_cipher.h \
 		       osmocom/ctrl/control_cmd.h \

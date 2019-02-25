@@ -26,6 +26,7 @@ libosmocore_la_SOURCES = timer.c timer_gettimeofday.c timer_clockgettime.c \
 			 isdnhdlc.c \
 			 tdef.c \
 			 use_count.c \
+			 ip_port.c \
 			 $(NULL)
 
 if HAVE_SSSE3

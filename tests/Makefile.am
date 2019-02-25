@@ -31,6 +31,7 @@ check_PROGRAMS = timer/timer_test sms/sms_test ussd/ussd_test		\
 		 tdef/tdef_vty_test_config_subnode			\
 		 tdef/tdef_vty_test_dynamic				\
 		 use_count/use_count_test				\
+		 ip_port/ip_port_test					\
 		 $(NULL)
 
 if ENABLE_MSGFILE
@@ -240,6 +241,9 @@ tdef_tdef_vty_test_dynamic_LDADD = $(LDADD) $(top_builddir)/src/vty/libosmovty.l
 use_count_use_count_test_SOURCES = use_count/use_count_test.c
 use_count_use_count_test_LDADD = $(LDADD)
 
+ip_port_ip_port_test_SOURCES = ip_port/ip_port_test.c
+ip_port_ip_port_test_LDADD = $(LDADD)
+
 # The `:;' works around a Bash 3.2 bug when the output is not writeable.
 $(srcdir)/package.m4: $(top_srcdir)/configure.ac
 	:;{ \
@@ -309,6 +313,7 @@ EXTRA_DIST = testsuite.at $(srcdir)/package.m4 $(TESTSUITE)		\
 	     tdef/tdef_vty_test_config_subnode.vty \
 	     tdef/tdef_vty_test_dynamic.vty \
 	     use_count/use_count_test.ok use_count/use_count_test.err \
+	     ip_port/ip_port_test.ok \
 	     $(NULL)
 
 DISTCLEANFILES = atconfig atlocal conv/gsm0503_test_vectors.c

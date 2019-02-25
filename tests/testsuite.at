@@ -338,3 +338,9 @@ cat $abs_srcdir/use_count/use_count_test.ok > expout
 cat $abs_srcdir/use_count/use_count_test.err > experr
 AT_CHECK([$abs_top_builddir/tests/use_count/use_count_test], [0], [expout], [experr])
 AT_CLEANUP
+
+AT_SETUP([ip_port])
+AT_KEYWORDS([ip_port])
+cat $abs_srcdir/ip_port/ip_port_test.ok > expout
+AT_CHECK([$abs_top_builddir/tests/ip_port/ip_port_test], [0], [expout], [ignore])
+AT_CLEANUP
